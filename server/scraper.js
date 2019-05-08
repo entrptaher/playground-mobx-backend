@@ -9,8 +9,8 @@ export default async () => {
   await page.evaluateOnNewDocument(builtDriver);
 
   await page.goto("https://example.com");
-  const location = await page.evaluate(() => getLocation());
+  const location = await page.evaluate(() => getLocationHref(""));
   await browser.close();
-  
+
   console.log({ location });
 };

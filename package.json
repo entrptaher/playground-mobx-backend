@@ -13,6 +13,7 @@
     ]
   },
   "dependencies": {
+    "auto-bind": "^2.1.0",
     "mobx": "^5.9.4",
     "puppeteer": "^1.15.0",
     "user-defined-methods": "^1.0.0"
