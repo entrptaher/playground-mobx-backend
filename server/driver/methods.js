@@ -5,9 +5,13 @@ export default class Driver {
 		autoBind(this);
 	}
   getLocationHref(){
-    return this.getLocation().href
+    return this.location.href
   }
-  getLocation() {
+  getLocationHash(){
+    return this.location.hash
+  }
+  setLocation() {
+    this.location = location;
     return location;
   }
 }

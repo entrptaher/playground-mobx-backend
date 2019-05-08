@@ -9,6 +9,7 @@ const driver = new Driver();
 window["driver"] = driver;
 
 // expose all methods from a driver instance
+// any method will reference the instance for "this"
 for (let method of getAllClassMethods(driver)) {
   window[method] = driver[method];
 }
